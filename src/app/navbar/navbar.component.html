@@ -1,0 +1,15 @@
+<nav class="navbar">
+    <div class="logo">MonSite</div>
+    <ul [class.active]="menuOpen">
+      <li><a routerLink="/">Accueil</a></li>
+      <li><a routerLink="/about">À propos</a></li>
+      <li><a routerLink="/services">Services</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  
