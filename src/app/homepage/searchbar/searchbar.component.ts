@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common'; // Pour *ngFor et *ngIf
   selector: 'app-searchbar',
   imports: [FormsModule,CommonModule],
   templateUrl: './searchbar.component.html',
-  styleUrl: './searchbar.component.css'
+  styleUrl: './searchbar.component.css',
+  standalone: true, // Déclare le composant comme standalone
 })
 export class SearchbarComponent {
   searchQuery: string = '';
